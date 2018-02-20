@@ -14,19 +14,19 @@ const siteConfig = {
   headerLinks: [
     {
       href: 'https://openzeppelin.org',
-      label: 'Home'
+      label: 'Home',
     },
     {
       doc: 'open-zeppelin',
-      label: 'Docs'
+      label: 'Docs',
     },
     {
       doc: 'crowdsale_Crowdsale',
-      label: 'API'
+      label: 'API',
     },
     {
       href: 'https://github.com/OpenZeppelin',
-      label: 'Github'
+      label: 'Github',
     }
   ],
   headerIcon: 'img/logo-zeppelin.png',
