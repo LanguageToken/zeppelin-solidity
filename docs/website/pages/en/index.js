@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2018-present, Open Zeppelin.
+ * Copyright (c) 2018-present, OpenZeppelin.
  * Copyright (c) 2017, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the

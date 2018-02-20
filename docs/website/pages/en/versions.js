@@ -1,5 +1,6 @@
 /**
- * Copyright (c) 2017-present, Facebook, Inc.
+ * Copyright (c) 2018-present, OpenZeppelin.
+ * Copyright (c) 2017, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -8,8 +9,8 @@
 const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary');
-const Container = CompLibrary.Container;
-const GridBlock = CompLibrary.GridBlock;
+const Container = CompLibrary.Container; // eslint-disable-line no-unused-vars
+const GridBlock = CompLibrary.GridBlock; // eslint-disable-line no-unused-vars
 
 const CWD = process.cwd();
 
@@ -17,7 +18,7 @@ const siteConfig = require(CWD + '/siteConfig.js');
 const versions = require(CWD + '/versions.json');
 
 class Versions extends React.Component {
-  render() {
+  render () {
     const latestVersion = versions[0];
     return (
       <div className="docMainWrapper wrapper">
@@ -36,7 +37,7 @@ class Versions extends React.Component {
                     <a href={`${siteConfig.baseUrl}docs/open-zeppelin.html`}>Documentation</a>
                   </td>
                   <td>
-                    <a href={`https://github.com/OpenZeppelin/zeppelin-solidity/releases/tag/v${latestVersion}`}>Release Notes</a>
+                    <a href={getVersionReleaseNotes(latestVersion)}>Release Notes</a>
                   </td>
                 </tr>
               </tbody>
@@ -46,18 +47,19 @@ class Versions extends React.Component {
             <table className="versions">
               <tbody>
                 {versions.map(
-                  version =>
-                    version !== latestVersion && (
+                  version => {
+                    return version !== latestVersion && (
                       <tr>
                         <th>{version}</th>
                         <td>
-                        <a href={`${siteConfig.baseUrl}docs/${version}/open-zeppelin.html`}>Documentation</a>
+                          <a href={`${siteConfig.baseUrl}docs/${version}/open-zeppelin.html`}>Documentation</a>
                         </td>
                         <td>
-                          <a href={`https://github.com/OpenZeppelin/zeppelin-solidity/releases/tag/v${version}`}>Release Notes</a>
+                          <a href={getVersionReleaseNotes(version)}>Release Notes</a>
                         </td>
                       </tr>
-                    )
+                    );
+                  }
                 )}
               </tbody>
             </table>
@@ -70,6 +72,16 @@ class Versions extends React.Component {
       </div>
     );
   }
+}
+
+/**
+ * Get release notes' URL for a specific version.
+ */
+function getVersionReleaseNotes (version) {
+  return [
+    'https://github.com/OpenZeppelin/zeppelin-solidity/releases/tag/',
+    `v${version}`,
+  ].join('');
 }
 
 module.exports = Versions;

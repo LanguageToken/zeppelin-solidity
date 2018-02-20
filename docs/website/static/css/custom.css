@@ -88,6 +88,10 @@ header > a > h3 {
   text-decoration: none;
 }
 
+nav.toc .toggleNav .navGroup h3 {
+  font-size: 12px !important;
+}
+
 footer.nav-footer {
   background: white;
 }

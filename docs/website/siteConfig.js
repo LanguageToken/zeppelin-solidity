@@ -27,7 +27,7 @@ const siteConfig = {
     {
       href: 'https://github.com/OpenZeppelin',
       label: 'Github',
-    }
+    },
   ],
   headerIcon: 'img/logo-zeppelin.png',
   footerIcon: 'img/symbol-zeppelin.png',
@@ -44,7 +44,7 @@ const siteConfig = {
   scripts: ['https://buttons.github.io/buttons.js'],
   stylesheets: [
     'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
-    'https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,700,400italic,700italic'
+    'https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,700,400italic,700italic',
   ],
   repoUrl: 'https://github.com/OpenZeppelin/zeppelin-solidity',
 };
