@@ -10,7 +10,7 @@ const siteConfig = {
   tagline: 'OpenZeppelin is an open framework of reusable and secure smart contracts in the Solidity language.',
   url: 'https://openzeppelin.org',
   baseUrl: '/api/',
-  projectName: 'openzeppelin',
+  projectName: 'api',
   headerLinks: [
     {
       href: 'https://openzeppelin.org',
