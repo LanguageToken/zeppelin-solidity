@@ -8,11 +8,28 @@
   },
   "docs-api": {
     "CROWDSALE": [
-      "crowdsale_CappedCrowdsale",
-      "crowdsale_Crowdsale",
-      "crowdsale_FinalizableCrowdsale",
-      "crowdsale_RefundVault",
-      "crowdsale_RefundableCrowdsale"
+      "crowdsale_Crowdsale"
+    ],
+    "CROWDSALE / DISTRIBUTION": [
+      "crowdsale_distribution_FinalizableCrowdsale",
+      "crowdsale_distribution_PostDeliveryCrowdsale",
+      "crowdsale_distribution_RefundableCrowdsale"
+    ],
+    "CROWDSALE / DISTRIBUTION / UTILS": [
+      "crowdsale_distribution_utils_RefundVault"
+    ],
+    "CROWDSALE / EMISSION": [
+      "crowdsale_emission_AllowanceCrowdsale",
+      "crowdsale_emission_MintedCrowdsale"
+    ],
+    "CROWDSALE / PRICE": [
+      "crowdsale_price_IncreasingPriceCrowdsale"
+    ],
+    "CROWDSALE / VALIDATION": [
+      "crowdsale_validation_CappedCrowdsale",
+      "crowdsale_validation_IndividuallyCappedCrowdsale",
+      "crowdsale_validation_TimedCrowdsale",
+      "crowdsale_validation_WhitelistedCrowdsale"
     ],
     "LIFECYCLE": [
       "lifecycle_Destructible",
